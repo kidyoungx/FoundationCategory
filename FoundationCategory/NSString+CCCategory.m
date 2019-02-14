@@ -210,7 +210,9 @@
     for (NSUInteger index = 0; index < self.length; ++index) {
         unichar uc = [self characterAtIndex:index];
         isASCIIString = isascii(uc);
-        break;
+        if (isASCIIString) {
+            break;
+        }
     }
     return isASCIIString;
 }
@@ -238,7 +240,7 @@
 - (BOOL)regularExpressionMatchURL:(NSString *)url
 {
     NSString *stephenhay = @"^((https?|ftp)://)?[^\\s/$.?#].[^\\s]*$";
-    NSString *immeEmosol = @"^((https?|ftp)://)?(-\\.)?([^\\s/?\\.#-]+\\.?)+(/[^\\s]*)?$";
+//    NSString *immeEmosol = @"^((https?|ftp)://)?(-\\.)?([^\\s/?\\.#-]+\\.?)+(/[^\\s]*)?$";
     NSString *regularExpression = [NSString stringWithFormat:@"%@", stephenhay];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regularExpression];
     BOOL result = [predicate evaluateWithObject:url];

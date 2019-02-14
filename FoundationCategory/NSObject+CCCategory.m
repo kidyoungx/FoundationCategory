@@ -21,7 +21,7 @@
 //        SEL selector = sel_registerName(propertyName);
 //        id selectorReturn = objc_msgSend(self, selector);
         
-        NSString *propertyKey = [NSString stringWithCString:propertyName encoding:NSUTF8StringEncoding];
+//        NSString *propertyKey = [NSString stringWithCString:propertyName encoding:NSUTF8StringEncoding];
 //        id propertyValue = [self valueForKey:propertyKey];
 
         switch (attribute[1]) {
@@ -29,7 +29,7 @@
                 if (attribute[3] == 'N' && firstObj) {
                     va_list variable_list;
                     va_start(variable_list, firstObj);
-                    BOOL *b = va_arg(variable_list, BOOL *);
+//                    BOOL *b = va_arg(variable_list, BOOL *);
                     // [self selector:(string, dictionary, object) propertyName:propertyKey other:(bool, void), nil]
                     NSAssert(0, @"objc_msgSend");
 //                    objc_msgSend(self, selector, firstObj, propertyKey, b, nil);
