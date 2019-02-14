@@ -16,7 +16,7 @@
     objc_property_t *propertyList = class_copyPropertyList(self.class, &propertyCount);
     for (unsigned int i = 0; i < propertyCount; ++i) {
         objc_property_t property = propertyList[i];
-        const char *propertyName = property_getName(property);
+//        const char *propertyName = property_getName(property);
         const char *attribute = property_getAttributes(property);
 //        SEL selector = sel_registerName(propertyName);
 //        id selectorReturn = objc_msgSend(self, selector);
