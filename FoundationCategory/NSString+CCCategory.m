@@ -210,7 +210,7 @@
     for (NSUInteger index = 0; index < self.length; ++index) {
         unichar uc = [self characterAtIndex:index];
         isASCIIString = isascii(uc);
-        if (isASCIIString) {
+        if (isASCIIString == NO) {
             break;
         }
     }
