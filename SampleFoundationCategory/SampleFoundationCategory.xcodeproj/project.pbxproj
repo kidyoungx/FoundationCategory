@@ -14,6 +14,11 @@
 		A7F0A104221DC0E9007A613D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F0A102221DC0E9007A613D /* LaunchScreen.storyboard */; };
 		A7F0A107221DC0E9007A613D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F0A106221DC0E9007A613D /* main.m */; };
 		A7F0A111221DC0E9007A613D /* SampleFoundationCategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F0A110221DC0E9007A613D /* SampleFoundationCategoryTests.m */; };
+		A7F0A123221DC14D007A613D /* URLMatch.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7F0A11D221DC14C007A613D /* URLMatch.plist */; };
+		A7F0A124221DC14D007A613D /* URLNotMatch.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7F0A11E221DC14C007A613D /* URLNotMatch.plist */; };
+		A7F0A125221DC14D007A613D /* URLMatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F0A11F221DC14C007A613D /* URLMatchTests.m */; };
+		A7F0A126221DC14D007A613D /* URLMatchRigorous.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7F0A121221DC14C007A613D /* URLMatchRigorous.plist */; };
+		A7F0A127221DC14D007A613D /* URLNotMatchRigorous.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7F0A122221DC14C007A613D /* URLNotMatchRigorous.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 		A7F0A10C221DC0E9007A613D /* SampleFoundationCategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFoundationCategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F0A110221DC0E9007A613D /* SampleFoundationCategoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleFoundationCategoryTests.m; sourceTree = "<group>"; };
 		A7F0A112221DC0E9007A613D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F0A11D221DC14C007A613D /* URLMatch.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = URLMatch.plist; sourceTree = "<group>"; };
+		A7F0A11E221DC14C007A613D /* URLNotMatch.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = URLNotMatch.plist; sourceTree = "<group>"; };
+		A7F0A11F221DC14C007A613D /* URLMatchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLMatchTests.m; sourceTree = "<group>"; };
+		A7F0A121221DC14C007A613D /* URLMatchRigorous.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = URLMatchRigorous.plist; sourceTree = "<group>"; };
+		A7F0A122221DC14C007A613D /* URLNotMatchRigorous.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = URLNotMatchRigorous.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +108,38 @@
 			isa = PBXGroup;
 			children = (
 				A7F0A110221DC0E9007A613D /* SampleFoundationCategoryTests.m */,
+				A7F0A11B221DC14C007A613D /* URLMatch */,
 				A7F0A112221DC0E9007A613D /* Info.plist */,
 			);
 			path = SampleFoundationCategoryTests;
+			sourceTree = "<group>";
+		};
+		A7F0A11B221DC14C007A613D /* URLMatch */ = {
+			isa = PBXGroup;
+			children = (
+				A7F0A11C221DC14C007A613D /* Fuzzy */,
+				A7F0A11F221DC14C007A613D /* URLMatchTests.m */,
+				A7F0A120221DC14C007A613D /* Rigorous */,
+			);
+			path = URLMatch;
+			sourceTree = "<group>";
+		};
+		A7F0A11C221DC14C007A613D /* Fuzzy */ = {
+			isa = PBXGroup;
+			children = (
+				A7F0A11D221DC14C007A613D /* URLMatch.plist */,
+				A7F0A11E221DC14C007A613D /* URLNotMatch.plist */,
+			);
+			path = Fuzzy;
+			sourceTree = "<group>";
+		};
+		A7F0A120221DC14C007A613D /* Rigorous */ = {
+			isa = PBXGroup;
+			children = (
+				A7F0A121221DC14C007A613D /* URLMatchRigorous.plist */,
+				A7F0A122221DC14C007A613D /* URLNotMatchRigorous.plist */,
+			);
+			path = Rigorous;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +232,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7F0A124221DC14D007A613D /* URLNotMatch.plist in Resources */,
+				A7F0A126221DC14D007A613D /* URLMatchRigorous.plist in Resources */,
+				A7F0A127221DC14D007A613D /* URLNotMatchRigorous.plist in Resources */,
+				A7F0A123221DC14D007A613D /* URLMatch.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7F0A111221DC0E9007A613D /* SampleFoundationCategoryTests.m in Sources */,
+				A7F0A125221DC14D007A613D /* URLMatchTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

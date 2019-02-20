@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        <string>http://foo.bar?q=Spaces should be encoded</string>
+        <string>//</string>
+        <string>//a</string>
+        <string>///a</string>
+        <string>///</string>
+        <string>http:// shouldfail.com</string>
+        <string>:// should fail</string>
+        <string>http://foo.bar/foo(bar)baz quux</string>
+        <string>例子 测试</string>
+        <string>例子 测试 用例</string>
+        <string>test example</string>
+        <string>test case example</string>
+        <string>/a</string>
+        <string>a</string>
+        <string>ab</string>
+        <string>abc</string>
+        <string>abcd</string>
+        <string>abcde</string>
+        <string>abcdef</string>
+    </array>
+</plist>

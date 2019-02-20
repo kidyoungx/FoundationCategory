@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        <string>http://</string>
+        <string>http://.</string>
+        <string>http://..</string>
+        <string>http://../</string>
+        <string>http://?</string>
+        <string>http://??</string>
+        <string>http://??/</string>
+        <string>http://#</string>
+        <string>http://##</string>
+        <string>http://##/</string>
+        <string>http://foo.bar?q=Spaces should be encoded</string>
+        <string>//</string>
+        <string>//a</string>
+        <string>///a</string>
+        <string>///</string>
+        <string>http:///a</string>
+        <string>foo.com</string>
+        <string>rdar://1234</string>
+        <string>h://test</string>
+        <string>http:// shouldfail.com</string>
+        <string>:// should fail</string>
+        <string>http://foo.bar/foo(bar)baz quux</string>
+        <string>ftps://foo.bar/</string>
+        <string>http://-error-.invalid/</string>
+        <string>http://a.b--c.de/</string>
+        <string>http://-a.b.co</string>
+        <string>http://a.b-.co</string>
+        <string>http://0.0.0.0</string>
+        <string>http://10.1.1.0</string>
+        <string>http://10.1.1.255</string>
+        <string>http://224.1.1.1</string>
+        <string>http://1.1.1.1.1</string>
+        <string>http://123.123.123</string>
+        <string>http://3628126748</string>
+        <string>http://.www.foo.bar/</string>
+        <string>http://www.foo.bar./</string>
+        <string>http://.www.foo.bar./</string>
+        <string>http://10.1.1.1</string>
+        <string>http://10.1.1.254</string>
+        <string>例子 测试</string>
+        <string>例子 测试 用例</string>
+        <string>test example</string>
+        <string>test case example</string>
+        <string>https://</string>
+        <string>https://.</string>
+        <string>https://..</string>
+        <string>https://../</string>
+        <string>https://?</string>
+        <string>https://??</string>
+        <string>https://??/</string>
+        <string>https://#</string>
+        <string>https://##</string>
+        <string>https://##/</string>
+        <string>/a</string>
+        <string>a</string>
+        <string>ab</string>
+        <string>abc</string>
+        <string>abcd</string>
+        <string>abcde</string>
+        <string>abcdef</string>
+    </array>
+</plist>
