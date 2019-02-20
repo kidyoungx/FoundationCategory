@@ -47,6 +47,6 @@
 
 @interface NSString (RegularExpression)
 
-- (BOOL)regularExpressionMatchURL:(NSString *)url;
+- (BOOL)regularExpressionMatchURL;
 
 @end

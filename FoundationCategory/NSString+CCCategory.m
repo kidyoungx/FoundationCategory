@@ -237,18 +237,18 @@
 
 @implementation NSString (RegularExpression)
 
-- (BOOL)regularExpressionMatchURL:(NSString *)url
+- (BOOL)regularExpressionMatchURL
 {
     NSString *stephenhay = @"^((https?|ftp)://)?[^\\s/$.?#].[^\\s]*$";
 //    NSString *immeEmosol = @"^((https?|ftp)://)?(-\\.)?([^\\s/?\\.#-]+\\.?)+(/[^\\s]*)?$";
     NSString *regularExpression = [NSString stringWithFormat:@"%@", stephenhay];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regularExpression];
-    BOOL result = [predicate evaluateWithObject:url];
+    BOOL result = [predicate evaluateWithObject:self];
     /*
     NSString *pattern = immeEmosol;
     NSError *error = nil;
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:0 error:&error];
-    NSArray<NSTextCheckingResult *> *results = [regex matchesInString:url options:0 range:NSMakeRange(0, url.length)];
+    NSArray<NSTextCheckingResult *> *results = [regex matchesInString:self options:0 range:NSMakeRange(0, self.length)];
     if (results.count != result) {
 
     }
